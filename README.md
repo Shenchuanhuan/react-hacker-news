@@ -35,6 +35,16 @@
 ![页面效果](http://i.imgur.com/zIivh5R.png)
 点击新闻条目会跳转到相应的网站
 
+###	Firebase提供的api链接[点击这里](https://github.com/HackerNews/API)
+
+###	项目中遇到的问题
+-	What does $.when.apply($, someArray) do?
+	>.apply is used to call a function with an array of arguments. It takes each element in the array, and uses each as a parameter to the function. .apply can also change the context (this) inside a function.So, let's take $.when. It's used to say "when all these promises are resolved... do something". It takes an infinite (variable) number of parameters.That's where .apply comes in. It takes the array, and calls $.when with each element as a parameter (and makes sure the this is set to jQuery/$), so then it all works :-)。
+	来自stackoverflow的回答，解释的很通俗易懂。点击[这里](http://stackoverflow.com/questions/14777031/what-does-when-apply-somearray-do)查看原答案
+	点赞第二的答案也很棒哟~
+---
+
+
 ###	最后
 作为一只前端小菜鸟，深觉前端可学的东西太多，所以目前还在努力学习各种技术中，如果项目有任何问题，欢迎issues或者微博@不想当翻译的死宅不是好程序媛。
 
